@@ -64,7 +64,7 @@ namespace WebApiAutores.Controllers
             {
                 return BadRequest("El Id del libro no coincide con el de la URL."); 
             }
-
+             
             context.Remove(libro);
             await context.SaveChangesAsync();
             return Ok();
